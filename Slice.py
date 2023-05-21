@@ -28,13 +28,21 @@ riv = {
     'Amazon':'America'
 }
 
+
 for r in riv.keys():
     print(f"River {r.title()} runs through {riv.get(r.title())}")
 
-   users = {
-       'aeinstein': 90,
-       'mcurie': {'first': 'marie','last': 'curie','location': 'paris'}
-    }
+users = {
+    'aeinstein': {'first': 'albert', 'last': 'einstein', 'location': 'princeton'},
+    'mcurie': {'first': 'marie','last': 'curie','location': 'paris'}
+}
 
-#'aeinstein': {'first': 'albert', 'last': 'einstein', 'location': 'princeton'},
-#'mcurie': {'first': 'marie','last': 'curie','location': 'paris'}
+kid = {
+    'aeinstein': ['red', 'blue','green'],
+    'mcurie': ['pink','yellow','white']
+}
+
+for kid,color in kid.items():
+    print(f"{kid.title()}'s favourite colours are")
+    for c in color:
+        print(c.title())
